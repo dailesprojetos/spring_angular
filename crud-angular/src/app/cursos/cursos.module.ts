@@ -1,14 +1,17 @@
 import { NgModule } from '@angular/core';
+import { CursosRoutingModule } from './cursos-routing.module';
+import { CursosComponent } from './cursos/cursos.component';
+import { AppMaterialModule } from '../shared/app-material/app-material.module';
 import { CommonModule } from '@angular/common';
 
-import { CursosRoutingModule } from './cursos-routing.module';
-
-
 @NgModule({
-  declarations: [],
+  declarations: [
+    CursosComponent
+  ],
   imports: [
     CommonModule,
-    CursosRoutingModule
+    CursosRoutingModule,
+    AppMaterialModule
   ]
 })
 export class CursosModule { }
